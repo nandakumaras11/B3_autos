@@ -40,3 +40,8 @@
  p {
    font-weight: 300;
  }
+
+ section,
+ footer {
+   padding: var(--containerMargin);
+ }
