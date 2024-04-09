@@ -1,0 +1,40 @@
+#MainMenu {
+    display: flex;
+    height: 10dvh;
+    padding: var(--containerMargin);
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+    .logo {
+        width: 15%;
+        height: 100%;
+        background-image: url("../../assets/logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .links {
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-transform: uppercase;
+        }
+
+        /* width: 40%; */
+    }
+
+    .icons {
+        width: 10%;
+        font-size: 2rem;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+    }
+}
