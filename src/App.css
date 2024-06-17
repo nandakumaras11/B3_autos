@@ -1,6 +1,17 @@
 #root {
 
-  --containerMargin: 0% 15%
+  --containerMargin: 0% 15%;
+  --primary: #fc830e;
+}
+
+@media screen and (max-width: 990px) {
+  #root {
+    --containerMargin: 0% 5%;
+  }
+
+  html {
+    font-size: 12px;
+  }
 }
 
 *,

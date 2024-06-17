@@ -1,15 +1,18 @@
 import { FaEnvelope, FaFacebook, FaInstagram, FaLink, FaMobile, FaWhatsapp } from "react-icons/fa"
 import "./Footer.css"
+import "./FooterMobile.css"
 import { FaMapLocation } from "react-icons/fa6"
 import { links } from "../Menu/Menu"
 const Footer = () => {
     return (
-        <footer>
+        <footer id="ContactUs">
             <div className="line"></div>
             <div className="footerContainer">
                 <div className="col1">
                     <div className="logo"></div>
-                    <div className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu magna id odio facilisis iaculis aliquet eget ante. Aliquam sem nisi, hendreFusce a neque non dolor consectetur condimentum..</div>
+                    <div className="description">B3 Autos,
+                        29/330, Plot No. 39, Girinagar Colony,
+                        Kadavanthra, Kochi - 682020</div>
                 </div>
                 <div className="col2">
                     <h3>Contact Us</h3>
