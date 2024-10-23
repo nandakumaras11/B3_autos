@@ -16,6 +16,9 @@ export const links = [
         link: <Link to="/HSRP">HSRP</Link>
     },
     {
+        link: <Link to="/HSRP">PRODUCTS & SERVICES</Link>
+    },
+    {
         link: <NavHashLink to="/#FAQS" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>FAQS</NavHashLink>
     },
     {

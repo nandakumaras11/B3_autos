@@ -15,16 +15,18 @@
         /* justify-content: space-around; */
 
         label {
-            width: 50%;
+            width: 40%;
         }
 
         input,
         select {
-            width: 50%;
+            width: 60%;
             border-radius: 4px;
             padding: 1%;
 
         }
+
+
 
         .getDataBtn {
             background-color: var(--primary);
@@ -35,12 +37,20 @@
             cursor: pointer;
             border-radius: 4px;
             margin-top: 2%;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .enable {
+            pointer-events: auto;
+            opacity: 1;
         }
 
         .typeofvehicle {
             color: green;
             font-weight: 500;
-            width: 50%;
+            width: 60%;
+
             /* display: flex;
             justify-content: space-between; */
 
@@ -53,13 +63,18 @@
             .variant {
                 font-size: 12px;
                 color: black;
+                width: 100%;
             }
         }
 
         .vehicleTypes {
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             margin-top: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.8rem;
+
 
             span {
                 width: 100%;
@@ -69,6 +84,21 @@
                 }
             }
 
+            .radioVehicleTypes {
+                display: flex;
+                flex-direction: column;
+
+                /* width: 50%; */
+                div {
+                    display: flex;
+                    align-items: center;
+                }
+
+                input,
+                label {
+                    width: auto;
+                }
+            }
 
             .vehicleType {
                 cursor: pointer;
@@ -77,6 +107,7 @@
                 color: black;
                 margin-bottom: 16px;
                 border-radius: 4px;
+                flex-grow: 1;
 
             }
         }

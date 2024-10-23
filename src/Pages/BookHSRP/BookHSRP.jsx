@@ -139,47 +139,6 @@ const BookHSRP = () => {
             <form>
                 <h1>Place order for new HSRP</h1>
                 <div className="row">
-                    <label htmlFor="typeofvehicle">Type of Vehicle</label>
-                    <div className="typeofvehicle">{selectedVehicle != "" && `${selectedVehicle}`} {selectedVehicle != "" && <div className="clear" onClick={() => { handleSelect(tov); handleSelectedOptions("") }}>Clear</div>} <div className="vehicleTypes">
-                        {console.log(selectedItem)}
-                        <div className="variant"> {selectedVehicle != "" && "Please select variant"}</div>
-                        {
-
-                            selectedItem.map((item, index) => {
-                                // return <span><input type="radio" name={selectedItem[0].item} checked={false} id={item.item} onClick={() => {
-                                //     // selectedVehicle = selectedVehicle + item.item;
-                                //     handleSelectedOptions(selectedVehicle != "" ? selectedVehicle + " > " + item.item : item.item)
-                                //     handleSelect(selectedItem[index].options);
-                                //     // selectedItem[index].options.length > 0 && handleSelect(selectedItem[index].options);
-
-                                // }} /><label for={item.item}>{item.item}</label> </span>
-                                return <div className="vehicleType" onClick={() => {
-                                    handleSelectedOptions(selectedVehicle != "" ? selectedVehicle + " > " + item.item : item.item)
-                                    handleSelect(selectedItem[index].options);
-                                    // selectedItem[index].options.length > 0 && handleSelect(selectedItem[index].options);
-                                    selectedItem[index].options.length
-                                }}>{item.item}</div>
-                            })}
-                    </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <label htmlFor="registrationNumber">First Name </label>
-                    <input type="text" name="registrationNumber" id="registrationNumber" />
-                </div>
-                <div className="row">
-                    <label htmlFor="registrationNumber">Middle Name </label>
-                    <input type="text" name="registrationNumber" id="registrationNumber" />
-                </div>
-                <div className="row">
-                    <label htmlFor="registrationNumber">Last Name</label>
-                    <input type="text" name="registrationNumber" id="registrationNumber" />
-                </div>
-                <div className="row">
-                    <label htmlFor="registrationNumber">Mobile Number</label>
-                    <input type="text" name="registrationNumber" id="registrationNumber" />
-                </div>
-                <div className="row">
                     <label htmlFor="state"> State</label>
                     <select name="state" id="state">
                         <option >Kerala</option>
@@ -215,6 +174,52 @@ const BookHSRP = () => {
 
                     </select>
                 </div>
+                <div className="row">
+                    <label htmlFor="typeofvehicle">Choose your Vehicle</label>
+                    <div className="typeofvehicle">{selectedVehicle != "" && `${selectedVehicle}`} {selectedVehicle != "" && <div className="clear" onClick={() => { handleSelect(tov); handleSelectedOptions("") }}>Clear</div>} <div className="vehicleTypes">
+                        {console.log(selectedItem)}
+                        <div className="variant"> {selectedVehicle != "" && selectedItem.length > 0 && "Please select variant"}</div>
+                        {selectedItem[0].options.length > 0 ?
+                            selectedItem.map((item, index) => {
+                                // return <span><input type="radio" name={selectedItem[0].item} checked={false} id={item.item} onClick={() => {
+                                //     // selectedVehicle = selectedVehicle + item.item;
+                                //     handleSelectedOptions(selectedVehicle != "" ? selectedVehicle + " > " + item.item : item.item)
+                                //     handleSelect(selectedItem[index].options);
+                                //     // selectedItem[index].options.length > 0 && handleSelect(selectedItem[index].options);
+
+                                // }} /><label for={item.item}>{item.item}</label> </span>
+                                return <div className="vehicleType" onClick={() => {
+                                    handleSelectedOptions(selectedVehicle != "" ? selectedVehicle + " > " + item.item : item.item)
+                                    handleSelect(selectedItem[index].options);
+                                    // selectedItem[index].options.length > 0 && handleSelect(selectedItem[index].options);
+                                    // selectedItem[index].options.length
+                                }}>{item.item}</div>
+                            }) : <div className="radioVehicleTypes">{
+                                selectedItem.map((item, index) => {
+                                    return <div>    <input type="checkbox" name={item.item} id={item.item} /><label for={item.item}>{item.item}</label></div>
+                                })
+                            }
+                            </div>}
+                    </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <label htmlFor="registrationNumber">First Name </label>
+                    <input type="text" name="registrationNumber" id="registrationNumber" />
+                </div>
+                <div className="row">
+                    <label htmlFor="registrationNumber">Middle Name </label>
+                    <input type="text" name="registrationNumber" id="registrationNumber" />
+                </div>
+                <div className="row">
+                    <label htmlFor="registrationNumber">Last Name</label>
+                    <input type="text" name="registrationNumber" id="registrationNumber" />
+                </div>
+                <div className="row">
+                    <label htmlFor="registrationNumber">Mobile Number</label>
+                    <input type="text" name="registrationNumber" id="registrationNumber" />
+                </div>
+
                 <div className="row">
                     <label htmlFor="registrationNumber">  Registration number</label>
                     <input type="text" name="registrationNumber" placeholder="Eg:KA-03-HA-1985" id="registrationNumber" />
@@ -256,7 +261,7 @@ const BookHSRP = () => {
                     <div className="a">             {selectedVehicle != "" && `you have slected ${selectedVehicle}`}</div>
                 </div> */}
                 <div className="row">
-                    <div className="getDataBtn">Get Data</div>
+                    <div className={`getDataBtn ${selectedItem.length == 0 && 'enable'}`}>Place Order</div>
                 </div>
 
 
