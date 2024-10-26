@@ -1,0 +1,133 @@
+.table-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(5, auto); /* 5 rows */
+  gap: 0; /* No gaps between items for a seamless table look */
+  border: 1px dotted #333; /* Outer border for the table */
+}
+
+.table-grid-item {
+  border: 1px dotted #333; /* Dotted borders for each cell */
+  padding: 15px;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+.danger-msg {
+  color: red;
+}
+/* .table-grid-item */
+.legislationPage {
+  /* Container grid with 3 columns */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; /* Space between each grid item */
+    padding: 20px;
+  }
+
+  .grid-item {
+    border: 1px dotted #333; /* Dotted border for each item */
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-heading {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333; /* Bottom border for each heading */
+    text-align: center;
+  }
+
+  .content-list {
+    display: flex;
+    flex-direction: column; /* Stacking items vertically */
+    gap: 10px; /* Space between each content item */
+    justify-content: space-between; /* Ensure content items are spaced out evenly */
+    flex-grow: 1; /* Allow content to grow and fill the space */
+  }
+
+  .content-list p {
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* Background colors for each paragraph in the second div */
+  .color-light-blue {
+    background-color: #add8e6;
+  }
+
+  .color-orange {
+    background-color: #ffa500;
+  }
+
+  .color-grey {
+    background-color: #d3d3d3;
+  }
+
+  .color-light-blue-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #add8e6 10%);
+  }
+
+  .color-orange-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #ffa500 10%);
+  }
+
+  .color-grey-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #d3d3d3 10%);
+  }
+  .table-headding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .main-headding {
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .table-sub-headding {
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .car-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+  }
+}
+
+.Third-License-Plate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .headding {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .item-heading {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .color-code{
+    padding: 50px 0px 50px 0px;
+
+  }
+
+}

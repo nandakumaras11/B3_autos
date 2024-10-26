@@ -4,6 +4,10 @@ import { About } from "./Pages/About/About";
 import HSRP from "./Pages/HSRP/HSRP";
 import Media from "./Pages/Media/Media";
 import BookHSRP from "./Pages/BookHSRP/BookHSRP";
+import Commingsoon from "./Pages/Commingsoon/Commingsoon";
+import Quality from "./Pages/Quality/Quality";
+import Legislation from "./Pages/Legislation/Legislation";
+import Twoweelers from "./Pages/Twoweelers";
 
 
 export const AllRoutes = () => {
@@ -27,6 +31,22 @@ export const AllRoutes = () => {
         {
             path: "/bookHSRP",
             element: <BookHSRP />,
+        },
+        {
+            path: "/service1",
+            element: <Commingsoon />,
+        },
+        {
+            path: "/legislation",
+            element: <Legislation />,
+        },
+        {
+            path: "/quality",
+            element: <Quality />,
+        },
+        {
+            path: "/two-wheelers/:id",
+            element: <Twoweelers />,
         },
         // {
         //     path: "/Blogs/:blogName",
