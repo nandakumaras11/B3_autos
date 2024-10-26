@@ -1,12 +1,17 @@
-import "./ComingSoon.css"
-const Commingsoon = () => {
+import "./ComingSoon.css";
+
+const ComingSoon = () => {
     return (
         <section className="comingSoonPage">
             <div className="comingSoonContent">
-                Coming soon
+                Coming Soon...
             </div>
+            {/* Decorative elements */}
+            <div className="decorative"></div>
+            <div className="decorative"></div>
+            <div className="decorative"></div>
         </section>
     );
 };
 
-export default Commingsoon;
+export default ComingSoon;

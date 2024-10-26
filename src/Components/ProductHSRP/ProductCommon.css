@@ -164,24 +164,32 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.table-main-heading {
+  font-size: 30px;
+  line-height: 1.2em;
+}
+.table-sub-heading{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 4rem;
+}
 @media screen and (max-width: 768px) {
   .vechicle-details {
     flex-direction: column-reverse;
   }
-  .vehicle-image{
+  .vehicle-image {
     width: 100%;
   }
-  .vehicle-diamenstion{
+  .vehicle-diamenstion {
     width: 100%;
   }
-  .table-main-heading{
+  .table-main-heading {
     font-size: 22px;
     line-height: 1.2em;
     padding: 21px 0px;
   }
-  .table-sub-heading{
+  .table-sub-heading {
     font-size: 15px;
     padding-bottom: 13px;
-
   }
 }

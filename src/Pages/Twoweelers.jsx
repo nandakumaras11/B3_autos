@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import ProductCommon from "../Components/ProductHSRP/ProductCommon";
+import BookHSRP from "./BookHSRP/BookHSRP";
+import Gallery from "../Components/Gallary/Gallery";
 
 const Twoweelers = () => {
   const { id } = useParams();
@@ -67,6 +69,9 @@ const Twoweelers = () => {
         </div>
       </section>
       <ProductCommon vechicleDetails={rendercontent()} />
+      <Gallery/>
+      <BookHSRP/>
+
     </>
   );
 };

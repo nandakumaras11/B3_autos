@@ -1,3 +1,4 @@
+import Colorcode from "../../Components/Table/Colorcode/Colorcode";
 import "./Legislation.css";
 const Legislation = () => {
   const table_Content = [
@@ -119,26 +120,18 @@ const Legislation = () => {
         </p>
       </div>
       <div className="car-img">
-        <img src="./images/Legislation-car-2.png" alt="car-img" />
+        <img src="./images/Legislation-car-2(1).png" alt="car-img" />
       </div>
 
       {/* table content  */}
 
       <div className="table-container">
         <div className="table-headding">
-        
-        <div className="main-headding">HSRP : Types & Categories</div>
-        <div className="table-sub-headding">
-          Class of Vehicle : Alpha Numeric Colour : Background Colour
+          <div className="main-headding">HSRP : Types & Categories</div>
+          <div className="table-sub-headding">
+            Class of Vehicle : Alpha Numeric Colour : Background Colour
+          </div>
         </div>
-        </div>
-
-        {/* <table>
-          <tr>
-            <th></th>
-            <th></th>
-          </tr>
-        </table> */}
         <div className="table-grid-container">
           {table_Content.map((item, index) => (
             <div key={index} className="table-grid-item">
@@ -156,50 +149,14 @@ const Legislation = () => {
       <div className="Third-License-Plate">
         <h3 className="headding">Third License Plate</h3>
         <img src="./images/third-license-plate.jpg" alt="img" />
-        <h1 className="color-code">Color codes for ncr region</h1>
+        <h1 className="color-code mobile-headding">
+          Color codes for ncr region
+        </h1>
 
-        <div className="grid-container">
-          <div className="grid-item">
-            <h2 className="item-heading" style={{fontSize:"14px"}}>
-              BSES: BHARAT STAGE EMISSION STANDARD
-            </h2>
-            <div className="content-list">
-              <p>BS III & BS IV</p>
-              <p>BS III & BS IV</p>
-              <p>BS III & IV</p>
-              <p>BS VI</p>
-              <p>BS VI</p>
-              <p>BS VI</p>
-            </div>
-          </div>
-
-          <div className="grid-item">
-            <h2 className="item-heading">FUEL TYPE</h2>
-            <div className="content-list">
-              <p className="color-bg color-light-blue">PETROL & CNG</p>
-              <p className="color-bg color-orange">DIESEL</p>
-              <p className="color-bg color-grey">OTHER VEHICLES</p>
-              <p className="color-bg color-light-blue-top-green">
-                PETROL & CNG & LPG
-              </p>
-              <p className="color-bg color-orange-top-green">DIESEL</p>
-              <p className="color-bg color-grey-top-green">OTHER VEHICLES</p>
-            </div>
-          </div>
-
-          <div className="grid-item">
-            <h2 className="item-heading">3 RD LP BACKGROUND</h2>
-            <div className="content-list">
-              <p>LIGHT BLUE</p>
-              <p>ORANGE</p>
-              <p>GREY</p>
-              <p>GREEN STRIP ON TOP LIGHT BLUE</p>
-              <p>GREEN STRIP ON TOP ORANGE</p>
-              <p>GREEN STRIP ON TOP GREY</p>
-            </div>
-          </div>
-        </div>
+        <Colorcode />
       </div>
+
+      {/* // example0 */}
     </section>
   );
 };

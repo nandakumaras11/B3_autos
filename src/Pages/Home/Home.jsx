@@ -4,6 +4,8 @@ import "./Home.css"
 import "./HomeMobile.css"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ImageCarousel from "../../Components/Carosal/ImageCarousel";
+import Gallery from "../../Components/Gallary/Gallery";
 const Home = () => {
     const navigate = useNavigate();
     const faqs = [
@@ -34,7 +36,7 @@ const Home = () => {
         },
     ];
     return (<>
-        <section className="banner">
+        {/* <section className="banner">
             <div className="bannerLeft">
                 <h1>High Security Registration Plates Get ahead of the curve</h1>
                 <div className="HSRPButtons">
@@ -42,7 +44,8 @@ const Home = () => {
                     <div className="bookHSRPBtn" onClick={() => { navigate("/bookHSRP") }}>Book HSRP</div>
                 </div>
             </div>
-        </section>
+        </section> */}
+        <ImageCarousel/>
         <div className="hr" />
         <section className="about">
 
@@ -57,16 +60,7 @@ const Home = () => {
                 <div className="readMore" onClick={() => { navigate("/About") }}>Read More</div>
             </div>
         </section>
-        <section className="gallery" id="Gallery">
-            <h1>Gallery</h1>
-            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu magna id odio facilisis iaculis aliquet eget ante. Aliquam sem nisi, hendreFusce a neque non dolor consectetur condimentum.rit sit amet malesuada eu, vulputate sit amet metus. Phasellus aliquet mi id diam ornare luctus. Proin lacinia leo ligula.  </p> */}
-            <div className="galleryList">
-                <div className="galleryItem"></div>
-                <div className="galleryItem"></div>
-                <div className="galleryItem"></div>
-                <div className="galleryItem"></div>
-            </div>
-        </section>
+        <Gallery/>
         <section className="faq" id="FAQS">
             <div className="faqHeader">
 
