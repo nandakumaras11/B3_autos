@@ -45,7 +45,7 @@ const ImageCarousel = () => {
   const [key, setKey] = useState(0);
 
   const handleChange = (index) => {
-    if (index === 3) {
+    if (index === 4) {
       setKey((prevKey) => prevKey + 1);
     }
   };
@@ -62,15 +62,19 @@ const ImageCarousel = () => {
       transitionTime={600}
     >
       <div>
-        <img src="images/banner.jpg" alt="Slide 1" />
+        <img src="banner/b1.jpg" alt="Slide 1" />
         {/* <p className="legend">Slide 1</p> */}
       </div>
       <div>
-        <img src="images/banner.jpg" alt="Slide 2" />
+        <img src="banner/b2.jpg" alt="Slide 2" />
         {/* <p className="legend">Slide 2</p> */}
       </div>
       <div>
-        <img src="images/banner.jpg" alt="Slide 3" />
+        <img src="banner/b3.jpg" alt="Slide 3" />
+        {/* <p className="legend">Slide 3</p> */}
+      </div>
+      <div>
+        <img src="banner/b4.jpg" alt="Slide 4" />
         {/* <p className="legend">Slide 3</p> */}
       </div>
     </Carousel>

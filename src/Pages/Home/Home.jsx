@@ -45,7 +45,7 @@ const Home = () => {
                 </div>
             </div>
         </section> */}
-        <ImageCarousel/>
+        <ImageCarousel />
         <div className="hr" />
         <section className="about">
 
@@ -60,7 +60,7 @@ const Home = () => {
                 <div className="readMore" onClick={() => { navigate("/About") }}>Read More</div>
             </div>
         </section>
-        <Gallery/>
+        {/* <Gallery /> */}
         <section className="faq" id="FAQS">
             <div className="faqHeader">
 

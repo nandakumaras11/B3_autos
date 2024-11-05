@@ -15,8 +15,8 @@ const Twoweelers = () => {
     space_between: "5mm",
     ratio: "Plate Size: 285mm x 45mm",
     vehicle_img: "../images/two-wheeler.png",
-    table_mainhedding:"TWO WHEELERS: MOTORCYCLE FRONT",
-    table_sub_headding:"All Dimensions ' NOT LESS THAN '"
+    table_mainhedding: "TWO WHEELERS: MOTORCYCLE FRONT",
+    table_sub_headding: "All Dimensions ' NOT LESS THAN '"
   };
 
   const TWO_AND_THREE = {
@@ -25,8 +25,8 @@ const Twoweelers = () => {
     space_between: "5mm",
     ratio: "Plate Size: 200mm x 100mm",
     vehicle_img: "../images/two-three-wheeler.png",
-     table_mainhedding:"TWO WHEELERS & THREE WHEELERS",
-    table_sub_headding:"CMVR: Rule 50 & 51 : All Dimensions ' NOT LESS THAN '"
+    table_mainhedding: "TWO WHEELERS & THREE WHEELERS",
+    table_sub_headding: "CMVR: Rule 50 & 51 : All Dimensions ' NOT LESS THAN '"
   };
   const FOUR_WHEEL = {
     height: "65mm",
@@ -34,8 +34,8 @@ const Twoweelers = () => {
     space_between: "10mm",
     ratio: "Plate Size: 500mm x 120mm",
     vehicle_img: "../images/four-wheeler.png",
-     table_mainhedding:"LMV : FOUR WHEELERS",
-    table_sub_headding:""
+    table_mainhedding: "LMV : FOUR WHEELERS",
+    table_sub_headding: ""
   };
   const MEDIUM_AND_HEAVY = {
     height: "65mm",
@@ -43,8 +43,8 @@ const Twoweelers = () => {
     space_between: "10mm",
     ratio: "Plate Size: 340mm x 200mm",
     vehicle_img: "../images/heavy-wheeler.png",
-     table_mainhedding:"MEDIUM, HEAVY COMMERCIAL VEHICLE & TRAILOR COMBINATION",
-    table_sub_headding:"All Dimensions ' NOT LESS THAN '"
+    table_mainhedding: "MEDIUM, HEAVY COMMERCIAL VEHICLE & TRAILOR COMBINATION",
+    table_sub_headding: "All Dimensions ' NOT LESS THAN '"
   };
 
   const rendercontent = () => {
@@ -57,8 +57,8 @@ const Twoweelers = () => {
         return FOUR_WHEEL;
       case 4:
         return MEDIUM_AND_HEAVY;
-        default:
-          return null
+      default:
+        return null
     }
   };
   return (
@@ -69,8 +69,8 @@ const Twoweelers = () => {
         </div>
       </section>
       <ProductCommon vechicleDetails={rendercontent()} />
-      <Gallery/>
-      <BookHSRP/>
+      {/* <Gallery/> */}
+      <BookHSRP />
 
     </>
   );
