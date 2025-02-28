@@ -36,15 +36,7 @@ const Home = () => {
         },
     ];
     return (<>
-        {/* <section className="banner">
-            <div className="bannerLeft">
-                <h1>High Security Registration Plates Get ahead of the curve</h1>
-                <div className="HSRPButtons">
-                    <div className="knowHSRPBtn" onClick={() => { navigate("/HSRP") }}>KNOW HSRP</div>
-                    <div className="bookHSRPBtn" onClick={() => { navigate("/bookHSRP") }}>Book HSRP</div>
-                </div>
-            </div>
-        </section> */}
+
         <ImageCarousel />
         <div className="hr" />
         <section className="about">

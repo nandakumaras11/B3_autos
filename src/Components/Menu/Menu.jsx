@@ -33,16 +33,16 @@ export const links = [
   {
     link: <Link to="/Media">Media</Link>,
   },
-  {
-    link: (
-      <NavHashLink
-        to="/#Gallery"
-        scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-      >
-        Gallery
-      </NavHashLink>
-    ),
-  },
+  // {
+  //   link: (
+  //     <NavHashLink
+  //       to="/#Gallery"
+  //       scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
+  //     >
+  //       Gallery
+  //     </NavHashLink>
+  //   ),
+  // },
   {
     link: <Link to="/bookHSRP">Book HSRP</Link>,
   },
@@ -375,7 +375,7 @@ const Menu = () => {
   };
 
   return (
-    <div>
+    <div className={isMobileMenuOpened ? "menuRoot fixed" : "menuRoot"}>
       <div className="mobileMenuOptions">
         <div
           className="logo"
@@ -384,6 +384,7 @@ const Menu = () => {
             navigate("/");
           }}
         />
+        <Link to="/bookHSRP" className="mob_bookhsrpBtn" onClick={closeMobileMenu}>Book HSRP</Link>
         {isMobileMenuOpened ? (
           <FaTimes onClick={() => setMobileMenu(false)} />
         ) : (
@@ -403,8 +404,8 @@ const Menu = () => {
           <Link to="/" onClick={closeMobileMenu}>
             Home
           </Link>
-          <Link to="/About">About</Link>
-          <Link to="/HSRP">HSRP</Link>
+          <Link to="/About" onClick={closeMobileMenu}>About</Link>
+          <Link to="/HSRP" onClick={closeMobileMenu}>HSRP</Link>
           <div className="dropdown" onMouseLeave={() => setDropdownOpen(false)}>
             <Link to="#" onClick={toggleDropdown}>
               PRODUCTS & SERVICES <FaChevronDown className="arrow-icon" />
@@ -483,6 +484,7 @@ const Menu = () => {
           >
             Contact
           </NavHashLink>
+          <Link to="/bookHSRP" className="bookhsrpBtn" onClick={closeMobileMenu}>Book HSRP</Link>
         </div>
         <div className="icons socialmedia-icons">
           <FaFacebook />

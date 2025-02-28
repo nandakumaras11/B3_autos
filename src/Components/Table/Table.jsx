@@ -10,14 +10,14 @@ const ProductCommon = ({ vechicleDetails }) => {
 
   return (
     <div className="vehicle-diamenstion">
-     {vechicleDetails.table_mainhedding &&  <h3 className="table-main-heading">{vechicleDetails.table_mainhedding}</h3>}
-     {vechicleDetails.table_sub_headding && <h6 className="table-sub-heading">{vechicleDetails.table_sub_headding}</h6>}
+      {vechicleDetails.table_mainhedding && <h3 className="table-main-heading">{vechicleDetails.table_mainhedding}</h3>}
+      {vechicleDetails.table_sub_headding && <h6 className="table-sub-heading">{vechicleDetails.table_sub_headding}</h6>}
       <div className="grid-containers">
         <div className="grid-table">
           <div className="cell cell-1">
             {vechicleDetails.ratio}
             <img
-              src="/images/3.png" // Adjust the path if necessary
+              src={`/images/${vechicleDetails.numberplate}`} // Adjust the path if necessary
               alt="Vehicle dimension"
               onClick={handleImageClick}
               className="clickable-image"

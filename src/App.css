@@ -2,11 +2,14 @@
 
   --containerMargin: 0% 15%;
   --primary: #fc830e;
+  padding-top: 10vh;
+
 }
 
 @media screen and (max-width: 990px) {
   #root {
     --containerMargin: 0% 5%;
+    padding-top: 0px;
   }
 
   html {

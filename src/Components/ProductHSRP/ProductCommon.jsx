@@ -9,7 +9,7 @@ const ProductCommon = ({ vechicleDetails }) => {
     Thickness: "5mm",
     space_between: "5mm",
     ratio: "Plate Size: 285mm x 45mm",
-    number_plate: "../images/1.png",
+    numberplate: "../images/construction/1.jpg",
     table_mainhedding: "",
     table_sub_headding: "",
   };
@@ -18,7 +18,7 @@ const ProductCommon = ({ vechicleDetails }) => {
     Thickness: "7mm",
     space_between: "5mm",
     ratio: "Plate Size: 200mm x 100mm",
-    number_plate: "../images/1.png",
+    numberplate: "../images/construction/2.jpg",
     table_mainhedding: "",
     table_sub_headding: "",
   };
@@ -27,7 +27,7 @@ const ProductCommon = ({ vechicleDetails }) => {
     Thickness: "10mm",
     space_between: "10mm",
     ratio: "Plate Size: 500mm x 120mm",
-    number_plate: "../images/1.png",
+    numberplate: "../images/construction/3.jpg",
     table_mainhedding: "",
     table_sub_headding: "",
   };
@@ -36,7 +36,7 @@ const ProductCommon = ({ vechicleDetails }) => {
     Thickness: "10mm",
     space_between: "10mm",
     ratio: "Plate Size: 340mm x 200mm",
-    number_plate: "../images/1.png",
+    numberplate: "../images/construction/4.jpg",
     table_mainhedding: "",
     table_sub_headding: "",
   };
@@ -75,20 +75,20 @@ const ProductCommon = ({ vechicleDetails }) => {
               </div>
             </div>
             {/* bottom thing */}
-       <LegalStandardNotice/>
+            <LegalStandardNotice />
           </>
         ) : (
           // "CONSTRUCTION EQUIPMENT VEHICLES"
           <>
-              <h1 className="table-main-heading">CONSTRUCTION EQUIPMENT VEHICLES</h1>
-              <h3 className="table-sub-heading">All Dimensions " NOT LESS THAN "</h3>
+            <h1 className="table-main-heading">CONSTRUCTION EQUIPMENT VEHICLES</h1>
+            <h3 className="table-sub-heading">All Dimensions " NOT LESS THAN "</h3>
             <div className="table-conteiner">
               <Table vechicleDetails={TABLE_1} />
               <Table vechicleDetails={TABLE_2} />
               <Table vechicleDetails={TABLE_3} />
               <Table vechicleDetails={TABLE_4} />
             </div>
-              <LegalStandardNotice/>
+            <LegalStandardNotice />
           </>
 
         )}

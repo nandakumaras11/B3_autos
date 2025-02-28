@@ -25,6 +25,8 @@ const Footer = () => {
                     <h3>Quick Links</h3>
                     <div className="quickLinks">
                         {links.map(({ link }) => {
+
+
                             return <div className="link"><FaLink />{link}</div>
 
                         })}

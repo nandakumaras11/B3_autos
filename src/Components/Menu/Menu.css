@@ -110,6 +110,7 @@
 
 /* Arrow icon styling */
 /* Main menu */
+
 #MainMenu {
   display: flex;
   height: 10vh;
@@ -117,17 +118,35 @@
   padding: var(--containerMargin);
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background-color: white;
   border-bottom: 1px solid rgb(233, 229, 229);
+
+  .bookhsrpBtn {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.2rem 0.7rem;
+    border-radius: 5px;
+  }
 }
 
 /* Links and dropdown styling */
 #MainMenu .links {
   display: flex;
+  font-size: 0.8rem;
+  align-items: center;
   gap: 20px;
+
+
 }
+
+/* * {
+  outline: red 2px solid;
+} */
+
 
 #MainMenu .links .dropdown {
   position: relative;
@@ -191,7 +210,7 @@
   display: flex;
   /* padding: 4px 7px; */
   justify-content: space-between;
-  width: 68px;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -204,11 +223,24 @@
   #MainMenu {
     background-color: var(--primary);
     padding: 0em 1em;
+    width: 100%;
+    /* position: static; */
 
   }
 
   #MainMenu .links {
     flex-direction: column;
+    font-size: 1.2rem;
+    /* width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    a {
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100%;
+      text-align: center;
+    } */
   }
 
   /* Mobile dropdown styling */

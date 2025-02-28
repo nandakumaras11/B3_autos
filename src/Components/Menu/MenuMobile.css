@@ -1,9 +1,33 @@
 @media screen and (max-width: 990px) {
+    #root {
+        margin-top: 9rem;
+    }
+
+    .mob_bookhsrpBtn {
+        border: 1px solid white;
+        padding: 0.7rem 1rem;
+        border-radius: 5px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .fixed {
+        position: fixed !important;
+    }
+
+    .menuRoot {
+        position: absolute;
+        z-index: 1000;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
 
     .mobileMenuOptions {
         position: sticky;
         z-index: 1001;
-        padding: 1em 2em;
+        padding: 1rem 1rem;
         background-color: var(--primary);
         display: flex;
         justify-content: space-between;
@@ -43,9 +67,9 @@
         /* right: 0; */
         top: 0;
         z-index: 100;
-        height: 158vh;
+        min-height: 100dvh;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         background-color: var(--primary);
         color: white;
         font-size: 1.5rem;
@@ -55,6 +79,7 @@
 
         .icons {
             width: auto;
+            margin-top: 5rem;
         }
 
         .logo {
